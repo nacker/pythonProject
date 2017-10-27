@@ -251,8 +251,67 @@ print("1234567890-------") # 会在一行显示
 print("1234567890\n-------") # 一行显示1234567890，另外一行显示-------
 ```
 
+# 1.6 输入
 
-# 1.6 标示符和关键字
+- 1.raw_input()
+    
+在Python中，获取键盘输入的数据的方法是采用 raw_input 
+函数，那么这个 raw_input 怎么用呢? 
+```
+password = raw_input("请输入密码:")
+print '您刚刚输入的密码是:', password
+```
+**注意:**
+```
+- raw_input()的小括号中放入的是，提示信息，用来在获取数据之前给用户的一个简单提示
+- raw_input()在从键盘获取了数据以后，会存放到等号右边的变量中
+- raw_input()会把用户输入的任何值都作为字符串来对待
+```
+
+- 2.input()
+
+    input()函数与raw_input()类似，但其接受的输入必须是表达式。
+    
+```
+>>> a = input() 
+123
+>>> a
+123
+>>> type(a)
+<type 'int'>
+>>> a = input()
+abc
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<string>", line 1, in <module>
+NameError: name 'abc' is not defined
+>>> a = input()
+"abc"
+>>> a
+'abc'
+>>> type(a)
+<type 'str'>
+>>> a = input()
+1+3
+>>> a
+4
+>>> a = input()
+"abc"+"def"
+>>> a
+'abcdef'
+>>> value = 100
+>>> a = input()
+value
+>>> a
+100
+```
+input()接受表达式输入，并把表达式的结果赋值给等号左边的变量
+
+- 3.python3版本中
+
+        没有raw_input()函数，只有input()
+        并且 python3中的input与python2中的raw_input()功能一样
+
 # 1.7 标示符和关键字
 # 1.8 标示符和关键字
 # 1.9 标示符和关键字
