@@ -2,134 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="870a9ee0-f39b-420c-8dc4-d817bb5ce361" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01Base/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Robots/day01/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/01/01-第一个c语言.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/01/02-第一个python.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/01/03-sublime编辑程序.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/01/04-hellowrold.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/01/05-定义变量.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/01/06-input.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/01/07-print.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/01/08-打印一个名片.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/01/09-if判断.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/01/10-判断一个年龄 (1).py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/01/10-判断一个年龄.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/01/11-if-else.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/01/12-if条件满足或者不满足的时候执行多句代码.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/01/13-输出多个.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/01/14-print一次输出多个变量.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/01/a.out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/01/test.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/01-if比较运算符.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/02-if逻辑运算符.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/03-if逻辑运算符-and.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/04-白富美.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/05-if注意点.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/06-if逻辑运算符-not.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/07-if-elif.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/08-判断星期几.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/09-while.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/10-if嵌套-上火车.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/11-判断白富美-高富帅.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/12-打印矩形.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/13-打印三角形.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/14-99乘法表.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/15-剪刀石头布 (1).py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/15-剪刀石头布.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/16-打印1~100之间的偶数.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/17-打印1~100之间的20个偶数.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/02/18-break.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/03/01-while中的break.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/03/02-while嵌套中的break.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/03/03-名字管理系统-1-大框架.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/03/03-名字管理系统-2-添加-查询.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/03/03-名字管理系统-3-退出系统.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/03/04-名片关系系统-1-大框架1.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/03/04-名片关系系统-1-大框架2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/03/04-名片关系系统-2-退出系统.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/03/04-名片关系系统-3-添加名片.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/03/04-名片关系系统-4-显示所有.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/03/04-名片关系系统.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/04/01-遍历列表的方式.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/04/02-for循环中的else.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/04/03-名片管理器-for-else.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/04/04-列表中的append-extend.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/04/05-列表的append注意点.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/04/06-打印佛祖.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/04/07-定义佛祖函数.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/04/08-定义-使用函数.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/04/09-带有参数的函数.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/04/10-带有返回值的函数.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/04/11-一个函数中有多个return.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/04/12-函数的嵌套调用.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/04/13-函数的嵌套调用应用-1.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/04/14-函数嵌套调用应用-2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/05/01-局部变量.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/05/02-全局变量.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/05/03-全局变量-局部变量的区别.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/05/04-全局变量定义的注意点.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/05/05-全局变量和局部变量名字相同.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/05/06-名片管理系统-函数版.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/05/07-列表当做全局变量.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/05/08-缺省参数.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/05/09-不定长参数.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/05/10-不定长参数2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/05/11-递归.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/05/12-递归的问题.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/06/01-匿名函数.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/06/02-匿名函数的应用.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/06/03-匿名函数扩展-1.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/06/04-匿名函数扩展-2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/06/05-交换2个值.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/06/06-知识点补充.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/06/07-写入数据.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/06/08-读取数据.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/06/09-复制文件.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/06/10-批量重命名.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/07/01-定义一个类.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/07/02-创建一个对象.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/07/03-调用对象的方法.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/07/04-添加属性.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/07/05-获取对象的属性.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/07/06-多个对象.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/07/07-self.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/07/08-__init__方法.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/07/09-__str__方法.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/07/10-烤地瓜.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/07/11-存放家具.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/08/01-隐藏对象的属性.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/08/02-隐藏对象的属性-私有属性.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/08/03-私有方法.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/08/04-__del__方法.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/08/05-继承.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/08/06-继承-扩展.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/08/07-重写.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/08/08-调用被重写的方法.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/08/09-私有方法-私有属性在继承中的表现.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/08/10-多继承.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/08/11-多继承-注意点.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/08/12-多态.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/08/13-类属性-实例属性.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/08/14-类属性-实例属性.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/08/15-实例方法-类方法-静态方法.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/09/01-__new__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/09/02-创建一个单例.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/09/03-只初始化1次.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/09/04-异常.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/09/05-ctrl-c异常.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/10/04-给程序传递参数.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Base/10/05-名片管理系统-文件版.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Robots/urllib2_ajax.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Robots/urllib2_get.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Robots/urllib2_https.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Robots/urllib2_post.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Robots/urllib2_request.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Robots/urllib2_urlopen.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Robots/urllib2_useragentlist.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01Base/README.md" afterPath="$PROJECT_DIR$/01Base/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -162,7 +35,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01Base/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
@@ -177,12 +50,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="233">
-                <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <first_editor relative-caret-position="162">
+                <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="22" selection-end-column="14" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -236,6 +109,7 @@
         <option value="$PROJECT_DIR$/Html/1/006html链接.html" />
         <option value="$PROJECT_DIR$/DB/总结1.txt" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/01Base/README.md" />
       </list>
     </option>
   </component>
@@ -246,10 +120,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="123" />
+    <option name="x" value="582" />
     <option name="y" value="23" />
     <option name="width" value="1350" />
-    <option name="height" value="740" />
+    <option name="height" value="838" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -610,7 +484,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="123" y="23" width="1350" height="740" extended-state="0" />
+    <frame x="582" y="23" width="1350" height="838" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -765,11 +639,11 @@
     <entry file="file://$PROJECT_DIR$/DB/t3One.py" />
     <entry file="file://$PROJECT_DIR$/DB/t2Update.py" />
     <entry file="file://$PROJECT_DIR$/DB/t1.py" />
-    <entry file="file://$PROJECT_DIR$/01Base/README.md">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <first_editor relative-caret-position="162">
+            <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="22" selection-end-column="14" />
             <folding />
           </first_editor>
           <second_editor>
@@ -778,11 +652,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/01Base/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="233">
-            <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor>
