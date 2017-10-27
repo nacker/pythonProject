@@ -1,5 +1,5 @@
 # python
-> 二哥和php的故事
+> 二哥和python的故事
 
 
 大纲
