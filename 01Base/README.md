@@ -1,5 +1,5 @@
 - [1.python基础知识](https://github.com/nacker/phpProject/tree/master/01_Base/01)
-	 - [1.1.第一个python程序](https://github.com/nacker/pythonProject/tree/master/01Base/01)
+	 - 1.1.第一个python程序
 	 - 1.2.注释
 	 - 1.3.变量以及类型
 	 - 1.4.标识符和关键字
@@ -12,7 +12,7 @@
 	 - 1.12.比较、关系运算符
 	 
 
-- [2.判断语句和循环语句](https://github.com/nacker/phpProject/tree/master/01_Base/02)
+- [2.判断语句和循环语句](https://github.com/nacker/pythonProject/tree/master/01Base/02)
 	 - 2.1.if-else
 	 - 2.2.elif
 	 - 2.3.if嵌套
