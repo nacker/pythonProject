@@ -141,11 +141,54 @@ result = num1 + num2 #把num1和num2这两个"菜篮子"中的数据进行累加
     
     - 查看关键字:
     
-    
-      and     as      assert     break     class      continue    def     del
-      elif    else    except     exec      finally    for         from    global
-      if      in      import     is        lambda     not         or      pass
-      print   raise   return     try       while      with        yield
+    <table>
+        <tr>
+            <th>and</th>
+            <th>as</th>
+            <th>assert</th>
+            <th>break</th>
+            <th>class</th>
+            <th>continue</th>
+            <th>def</th>
+            <th>del</th>
+        </tr>
+        <tr>
+            <th>elif</th>
+            <th>else</th>
+            <th>except</th>
+            <th>exec</th>
+            <th>finally</th>
+            <th>for</th>
+            <th>from</th>
+            <th>global</th>
+        </tr>
+        <tr>
+            <th>if</th>
+            <th>in</th>
+            <th>import</th>
+            <th>is</th>
+            <th>lambda</th>
+            <th>not</th>
+            <th>or</th>
+            <th>pass</th>
+        </tr>
+        <tr>
+            <th>print</th>
+            <th>raise</th>
+            <th>return</th>
+            <th>try</th>
+            <th>while</th>
+            <th>with</th>
+            <th>yield</th>
+        </tr>
+    </table>
+
+
+作者：Gaolex
+链接：http://www.jianshu.com/p/abaff828100d
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
 
 
 可以通过以下命令进行查看当前系统中python的关键字
