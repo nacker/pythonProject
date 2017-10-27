@@ -44,6 +44,24 @@ demo
 ```
 
 ## 3.3.字符串输入
+demo:
+
+```
+    userName = input('请输入用户名:')
+    print("用户名为：%s"%userName)
+
+    password = input('请输入密码:')
+    print("密码为：%s"%password)
+```
+结果：（根据输入的不同结果也不同）
+
+```
+    请输入用户名:dongGe
+    用户名为： dongGe
+    请输入密码:haohaoxuexitiantianxiangshang
+    密码为： haohaoxuexitiantianxiangshang
+```
+
 ## 3.4.下标和切片
 ## 3.5.字符串常见操作
 ## 3.6.列表介绍
