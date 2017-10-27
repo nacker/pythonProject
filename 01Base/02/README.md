@@ -348,6 +348,35 @@ print("1~100的累积和为:%d"%sum)
 
 ## 2.9 for循环
 
+- for循环的格式
+
+```
+    for 临时变量 in 列表或者字符串等:
+        循环满足条件时执行的代码
+    else:
+        循环不满足条件时执行的代码
+```
+
+- demo1
+
+```
+    name = 'dongGe'
+
+    for x in name:
+        print(x)
+```
+
+- demo2
+
+```
+    name = ''
+
+    for x in name:
+        print(x)
+    else:
+        print("没有数据")
+```
+
 ## 2.10 break和continue
 
 ## 2.11 总结
