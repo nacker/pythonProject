@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="870a9ee0-f39b-420c-8dc4-d817bb5ce361" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01Base/01/02-第一个python.py" afterPath="$PROJECT_DIR$/01Base/01/02-第一个python.py" />
-    </list>
+    <list default="true" id="870a9ee0-f39b-420c-8dc4-d817bb5ce361" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -498,7 +496,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="245" y="23" width="1350" height="838" extended-state="0" />
+    <frame x="245" y="23" width="1350" height="838" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
