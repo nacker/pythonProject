@@ -26,7 +26,7 @@
 	 - 2.11.总结
 	 
 	 
-- [3.字符串、列表、元组、字典](https://github.com/nacker/phpProject/tree/master/01_Base/02)
+- [3.字符串、列表、元组、字典](https://github.com/nacker/pythonProject/tree/master/01Base/03)
 	 - 3.1.字符串介绍
 	 - 3.2.字符串输出
 	 - 3.3.字符串输入
