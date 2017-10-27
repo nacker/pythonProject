@@ -132,6 +132,30 @@ result = num1 + num2 #把num1和num2这两个"菜篮子"中的数据进行累加
     - 大驼峰式命名法（upper camel case）： 每一个单字的首字母都采用大写字母，例如：FirstName、LastName
     - 不过在程序员中还有一种命名法比较流行，就是用下划线“_”来连接所有的单词，比如send_buf
     
+- 4.关键字
+
+    - 什么是关键字
+    
+    python一些具有特殊功能的标示符，这就是所谓的关键字<br>
+    关键字，是python已经使用的了，所以不允许开发者自己定义和关键字相同的名字的标示符
+    
+    - 查看关键字:
+    
+    
+      and     as      assert     break     class      continue    def     del
+      elif    else    except     exec      finally    for         from    global
+      if      in      import     is        lambda     not         or      pass
+      print   raise   return     try       while      with        yield
+
+
+可以通过以下命令进行查看当前系统中python的关键字
+```
+import keyword
+keyword.kwlist
+```
+
+
+
 
 # 1.5 输出
 # 1.6 标示符和关键字
