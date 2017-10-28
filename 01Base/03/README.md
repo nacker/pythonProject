@@ -977,6 +977,155 @@ False
 
 
 ## 3.14.字典的遍历
+通过for ... in ...:的语法结构，我们可以遍历字符串、列表、元组、字典等数据结构。
+
+注意python语法的缩进
+
+### 字符串遍历
+
+```
+>>> a_str = "hello word"
+>>> for char in a_str:
+...     print(char,end=' ')
+...
+h e l l o   w o r d
+```
+
+### 列表遍历
+
+```
+>>> a_list = [1, 2, 3, 4, 5]
+>>> for num in a_list:
+...     print(num,end=' ')
+...
+1 2 3 4 5
+
+```
+
+### 元组遍历
+
+```
+>>> a_turple = (1, 2, 3, 4, 5)
+>>> for num in a_turple:
+...     print(num,end=" ")
+1 2 3 4 5
+```
+
+### 字典遍历
+- 遍历字典的key（键）
+
+```
+>>> dict = {"name":'zhangsan','sex':'m'}
+>>> for key in dict.keys():
+...     print key
+... 
+name
+sex
+>>>
+```
+
+- 遍历字典的value（值）
+
+```
+>>> dict = {"name":'zhangsan','sex':'m'}
+>>> for value in dict.keys():
+...     print value
+... 
+zhangsan
+m
+>>>
+```
+
+- 遍历字典的项（元素）
+
+```
+>>> dict = {"name":'zhangsan','sex':'m'}
+>>> for item in dict.items():
+...     print item
+... 
+('name','zhangsan')
+('sex','m')
+```
+
+- 遍历字典的key-value（键值对）
+
+```
+>>> dict = {"name":'zhangsan','sex':'m'}
+>>> for key,value in dict.items():
+...     print("key=%s,value=%s"%(key,value))
+... 
+key=name,value=zhangsan
+key=sex,value=m
+>>>
+```
+
+如何实现带下标索引的遍历
+
+```
+>>> chars = ['a', 'b', 'c', 'd']
+>>> i = 0
+>>> for chr in chars:
+...     print("%d %s"%(i, chr))
+...     i += 1
+...
+0 a
+1 b
+2 c
+3 d
+```
+
+enumerate()
+
+```
+>>> chars = ['a', 'b', 'c', 'd']
+>>> for i, chr in enumerate(chars):
+...     print i, chr
+...
+0 a
+1 b
+2 c
+3 d
+```
+
 ## 3.15.公共方法
+运算符
+    <table>
+        <tr>
+            <th>运算符</th>
+            <th>Python 表达式</th>
+            <th>结果</th>
+            <th>描述</th>
+            <th>支持的数据类型</th>
+        </tr>
+        <tr>
+            <th>+</th>
+            <th>[1, 2] + [3, 4]</th>
+            <th>[1, 2, 3, 4]</th>
+            <th>合并</th>
+            <th>字符串、列表、元组</th>
+        </tr>
+        <tr>
+            <th>*</th>
+            <th>'Hi!' * 4</th>
+            <th>['Hi!', 'Hi!', 'Hi!', 'Hi!']</th>
+            <th>复制</th>
+            <th>字符串、列表、元组</th>
+        </tr>
+        <tr>
+            <th>in</th>
+            <th>3 in (1, 2, 3)</th>
+            <th>True</th>
+            <th>元素是否存在</th>
+            <th>字符串、列表、元组、字典</th>
+        </tr>
+        <tr>
+            <th>not in</th>
+            <th>4 not in (1, 2, 3)</th>
+            <th>True</th>
+            <th>元素是否不存在</th>
+            <th>字符串、列表、元组、字典</th>
+        </tr>
+    </table>
+    
 ## 3.16.引用
 
