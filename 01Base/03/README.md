@@ -77,7 +77,6 @@ python中下标从 0 开始
    print(name[2])
 ```
 
-
 2. 切片
 
 切片是指对操作的对象截取其中一部分的操作。字符串、列表、元组都支持切片操作。
@@ -131,8 +130,56 @@ print(name[1:-1]) # 取 下标为1开始 到 最后第2个  之间的字符
  'fd'
 ```
 
-
 ## 3.5.字符串常见操作
+1. find
+
+检测 str 是否包含在 mystr中，如果是返回开始的索引值，否则返回-1
+
+```
+mystr.find(str, start=0, end=len(mystr))
+```
+
+2. index
+
+跟find()方法一样，只不过如果str不在 mystr中会报一个异常.
+
+```
+mystr.index(str, start=0, end=len(mystr)) 
+```
+
+3. count
+
+返回 str在start和end之间 在 mystr里面出现的次数
+
+```
+mystr.count(str, start=0, end=len(mystr))
+```
+
+4. replace
+
+把 mystr 中的 str1 替换成 str2,如果 count 指定，则替换不超过 count 次.
+
+```
+mystr.replace(str1, str2,  mystr.count(str1))
+```
+5. split
+
+以 str 为分隔符切片 mystr，如果 maxsplit有指定值，则仅分隔 maxsplit 个子字符串
+
+```
+mystr.split(str=" ", 2) 
+```
+
+6. capitalize
+7. title
+8. startswith
+9. endswith
+10. lower
+11. upper
+12. ljust
+13. rjust
+14. center
+
 ## 3.6.列表介绍
 ## 3.7.列表的循环遍历
 ## 3.8.列表的常见操作

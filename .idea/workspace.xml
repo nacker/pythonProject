@@ -555,7 +555,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="152" y="23" width="1487" height="838" extended-state="0" />
+    <frame x="152" y="23" width="1487" height="838" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
