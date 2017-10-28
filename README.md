@@ -69,5 +69,15 @@
 	    - 4.15.匿名函数
 	    - 4.16.函数使用注意事项
 
+    - [5.文件操作、综合应用](https://github.com/nacker/pythonProject/tree/master/01Base/05)
+	    - 5.1.文件操作介绍
+	    - 5.2.文件的打开与关闭
+	    - 5.3.文件读写
+	    - 5.4.应用1:制作文件的备份
+	    - 5.5.文件的定位读写
+	    - 5.6.文件的重命名、删除
+	    - 5.7.文件夹的相关操作
+	    - 5.8.应用2:批量修改文件名
+	    - 5.9.综合应用:学生管理系统
 
 - 第二章：[Python提高](https://github.com/nacker/phpProject/tree/master/01_Base)
