@@ -732,8 +732,53 @@ for tempNames in offices:
     print("-"*20)
 ```
 
-
 ## 3.10.元组
+Python的元组与列表类似，不同之处在于元组的元素不能修改。元组使用小括号，列表使用方括号。
+
+```
+>>> aTuple = ('et',77,99.9)
+>>> aTuple
+('et',77,99.9)
+```
+1.访问元组
+
+```
+>>>tuple = ('hello',100,3.14)
+>>>tuple[0]
+'hello'
+>>>tuple[1]
+100
+>>>tuple[2]
+3.14
+>>>
+```
+
+2.修改元组
+
+```
+>>> tuple[2] = 188
+```
+说明： python中不允许修改元组的数据，包括不能删除其中的元素。
+
+3.元组的内置函数count, index
+
+index和count与字符串和列表中的用法相同
+
+```
+>>> a = ('a', 'b', 'c', 'a', 'b')
+>>> a.index('a', 1, 3) # 注意是左闭右开区间
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: tuple.index(x): x not in tuple
+>>> a.index('a', 1, 4)
+3
+>>> a.count('b')
+2
+>>> a.count('d')
+0
+```
+
+
 ## 3.11.字典介绍
 ## 3.12.字典的常见操作1
 ## 3.13.字典的常见操作2
