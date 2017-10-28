@@ -917,9 +917,65 @@ demo:clear清空整个字典
     print('清空后,%s'%info)
 ```
 
-
-
 ## 3.13.字典的常见操作2
+1.len()
+
+测量字典中，键值对的个数
+
+```
+>>> dict = {"name":'zhangsan','sex':'m'}
+>>> len(dict)
+2
+>>>
+```
+
+2.keys
+
+返回一个包含字典所有KEY的列表
+
+```
+>>> dict = {"name":'zhangsan','sex':'m'}
+>>> dict.keys()
+['name','sex']
+>>>
+```
+
+3.values
+
+返回一个包含字典所有value的列表
+
+```
+>>> dict = {"name":'zhangsan','sex':'m'}
+>>> dict.values()
+['zhangsan','m']
+>>>
+```
+
+4.items
+
+返回一个包含所有（键，值）元祖的列表
+
+```
+>>> dict = {"name":'zhangsan','sex':'m'}
+>>> dict.items()
+[('name','zhangsan'),('sex','m')]
+>>>
+```
+
+5.has_key
+
+dict.has_key(key)如果key在字典中，返回True，否则返回False
+
+```
+>>> dict = {"name":'zhangsan','sex':'m'}
+>>> dict.has_key('name')
+True
+>>> dict.has_key('phone')
+False
+>>>
+```
+
+
 ## 3.14.字典的遍历
 ## 3.15.公共方法
 ## 3.16.引用
