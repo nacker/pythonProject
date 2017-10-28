@@ -304,6 +304,70 @@ remove(待删除的文件名)
 ```
 
 ## 5.7.文件夹的相关操作
+1.创建文件夹
+```
+    import os
+
+    os.mkdir("张三")
+```
+2.获取当前目录
+```
+    import os
+
+    os.getcwd()
+```
+3.改变默认目录
+
+```
+    import os
+
+    os.chdir("../")
+```
+4.获取目录列表
+
+```
+    import os
+
+    os.listdir("./")
+
+```
+5.删除文件夹
+
+```
+    import os
+
+    os.rmdir("张三")
+```
 
 ## 5.8.应用2:批量修改文件名
+批量修改文件名
+
+```
+     #coding=utf-8
+
+    # 批量在文件名前加前缀
+
+    import os
+
+    funFlag = 1 # 1表示添加标志  2表示删除标志
+
+    folderName = './renameDir/'
+
+    # 获取指定路径的所有文件名字
+    dirList = os.listdir(folderName)
+
+    # 遍历输出所有文件名字
+    for name in dirList:
+        print name
+
+        if funFlag == 1:
+            newName = '[xxx]-' + name
+        elif funFlag == 2:
+            num = len('[xxx]-')
+            newName = name[num:]
+        print newName
+
+        os.rename(folderName+name, folderName+newName)
+```
+
 ## 5.9.综合应用:学生管理系统
