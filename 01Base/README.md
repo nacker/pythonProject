@@ -45,7 +45,7 @@
 	 - 3.16.引用
 	
 	
-- [4.函数](https://github.com/nacker/phpProject/tree/master/01_Base/02)
+- [4.函数](https://github.com/nacker/pythonProject/tree/master/01Base/04)
 	 - 4.1.函数介绍
 	 - 4.2.函数定义、调用
 	 - 4.3.函数的文档说明
