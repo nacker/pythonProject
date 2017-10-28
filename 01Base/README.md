@@ -76,7 +76,7 @@
 	 - 5.9.综合应用:学生管理系统
 
 
-- [6.面向对象1](https://github.com/nacker/phpProject/tree/master/01_Base/02)
+- [6.面向对象1](https://github.com/nacker/pythonProject/tree/master/01Base/06)
 	 - 6.1.面向对象编程介绍
 	 - 6.2.类和对象
 	 - 6.3.定义类
