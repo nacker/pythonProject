@@ -348,10 +348,36 @@ mystr 中每个字符后面插入str,构造出一个新的字符串
 ```
 mystr.join(str)
 ```
-
-
-
 ## 3.6.列表介绍
+1.列表的格式
+
+变量A的类型为列表
+
+```
+ namesList = ['xiaoWang','xiaoZhang','xiaoHua']
+```
+比C语言的数组强大的地方在于列表中的元素可以是不同类型的
+
+```
+testList = [1, 'a']
+```
+2.打印列表
+demo:
+
+```
+    namesList = ['xiaoWang','xiaoZhang','xiaoHua']
+    print(namesList[0])
+    print(namesList[1])
+    print(namesList[2])
+```
+结果：
+
+```
+    xiaoWang
+    xiaoZhang
+    xiaoHua
+```
+
 ## 3.7.列表的循环遍历
 ## 3.8.列表的常见操作
 ## 3.9.列表的嵌套
