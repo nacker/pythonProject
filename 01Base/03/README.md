@@ -1128,7 +1128,8 @@ enumerate()
     </table>
 
 
-+
+- +
+
 ```
 >>> "hello " + "itcast"
 'hello itcast'
@@ -1139,7 +1140,8 @@ enumerate()
 
 ```
 
-*
+- *
+
 ```
 >>> 'ab'*4
 'ababab'
@@ -1150,7 +1152,7 @@ enumerate()
 
 ```
 
-in
+- in
 
 ```
 >>> 'itc' in 'hello itcast'
@@ -1165,7 +1167,7 @@ True
 
 注意，in在对字典操作时，判断的是字典的键
 
-python内置函数
+#### python内置函数
 
 Python包含了以下内置函数
 
@@ -1173,8 +1175,162 @@ Python包含了以下内置函数
 ---|---|---
 1 | cmp(item1, item2) | 比较两个值
 2 | len(item) | 计算容器中元素个数
+3 | max(item) | 返回容器中元素最大值
+4 | min(item) | 返回容器中元素最小值
+5 | del(item) | 删除变量
 
+### cmp
 
+```
+>>> cmp("hello", "word")
+-1
+>>> cmp("word", "hello")
+1
+>>> cmp("word", "word")
+0
+>>> cmp([1, 2], [3, 4])
+-1
+>>> cmp([1, 2], [1, 1])
+1
+>>> cmp([1, 2], [1, 2, 3])
+-1
+>>> cmp({"a":1}, {"b":1})
+-1
+>>> cmp({"a":2}, {"a":1})
+1
+>>> cmp({"a":2}, {"a":2, "b":1})
+-1
+```
+**注意：cmp在比较字典数据时，先比较键，再比较值**。
+
+### len
+
+```
+>>> len("hello word")
+12
+>>> len([1, 2, 3, 4])
+4
+>>> len((3,4))
+2
+>>> len({"a":1, "b":2})
+2
+```
+**注意：len在操作字典数据时，返回的是键值对个数。**
+
+### max
+
+```
+>>> max("hello word")
+'d'
+>>> max([1,4,522,3,4])
+522
+>>> max({"a":1, "b":2})
+'b'
+>>> max({"a":10, "b":2})
+'b'
+>>> max({"c":10, "b":2})
+'c'
+```
+
+### del
+del有两种用法，一种是del加空格，另一种是del()
+
+```
+>>> a = 1
+>>> a
+1
+>>> del a
+>>> a
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'a' is not defined
+>>> a = ['a', 'b']
+>>> del a[0]
+>>> a
+['b']
+>>> del(a)
+>>> a
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'a' is not defined
+```
+
+### 多维列表/元祖访问的示例
+
+```
+>>> tuple1 = [(2,3),(4,5)]
+>>> tuple1[0]
+(2, 3)
+>>> tuple1[0][0]
+2
+>>> tuple1[0][2]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: tuple index out of range
+>>> tuple1[0][1]
+3
+>>> tuple1[2][2]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> tuple2 = tuple1+[(3)]
+>>> tuple2
+[(2, 3), (4, 5), 3]
+>>> tuple2[2]
+3
+>>> tuple2[2][0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not subscriptable
+```
 
 ## 3.16.引用
+
+### 引用
+在python中，值是靠引用来传递来的。
+
+我们可以用id()来判断两个变量是否为同一个值的引用。 我们可以将id值理解为那块内存的地址标示。
+
+```
+>>> a = 1
+>>> b = a
+>>> id(a) 
+13033816
+>>> id(b)   # 注意两个变量的id值相同
+13033816
+>>> a = 2
+>>> id(a)   # 注意a的id值已经变了
+13033792
+>>> id(b)   # b的id值依旧
+13033816
+```
+
+```
+>>> a = [1, 2]
+>>> b = a
+>>> id(a)
+139935018544808
+>>> id(b)
+139935018544808
+>>> a.append(3)
+>>> a
+[1, 2, 3]
+>>> id(a)
+139935018544808
+>>> id(b)       # 注意a与b始终指向同一个地址
+139935018544808
+```
+
+### 可变类型与不可变类型
+可变类型，值可以改变：
+
+- 列表 list
+- 字典 dict
+
+不可变类型，值不可以改变：
+
+- 数值类型 int, long, bool, float
+- 字符串 str
+- 元组 tuple
+
 
