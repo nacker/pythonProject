@@ -1128,7 +1128,7 @@ enumerate()
     </table>
 
 
-- +
+- 1.+
 
 ```
 >>> "hello " + "itcast"
@@ -1140,7 +1140,7 @@ enumerate()
 
 ```
 
-- *
+- 2.*
 
 ```
 >>> 'ab'*4
@@ -1152,7 +1152,7 @@ enumerate()
 
 ```
 
-- in
+- 3.in
 
 ```
 >>> 'itc' in 'hello itcast'
