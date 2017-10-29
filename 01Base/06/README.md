@@ -106,6 +106,41 @@ class Car:
 - 类名 的命名规则按照"大驼峰"
 
 ## 6.4.创建对象
+
+创建对象的格式为:
+
+```
+对象名 = 类名()
+```
+创建对象demo:
+
+```
+# 定义类
+class Car:
+    # 移动
+    def move(self):
+        print('车在奔跑...')
+
+    # 鸣笛
+    def toot(self):
+        print("车在鸣笛...嘟嘟..")
+
+
+# 创建一个对象，并用变量BMW来保存它的引用
+BMW = Car()
+BMW.color = '黑色'
+BMW.wheelNum = 4 #轮子数量
+BMW.move()
+BMW.toot()
+print(BMW.color)
+print(BMW.wheelNum)
+```
+**总结：**
+- BMW = Car()，这样就产生了一个Car的实例对象，此时也可以通过实例对象BMW来访问属性或者方法
+- 第一次使用BMW.color = '黑色'表示给BMW这个对象添加属性，如果后面再次出现BMW.color = xxx表示对属性进行修改
+- BMW是一个对象，它拥有属性（数据）和方法（函数）
+- 当创建一个对象时，就是用一个模子，来制造一个实物
+
 ## 6.5.__init__方法
 ## 6.6.应用:创建多个对象
 ## 6.7."魔法"方法
