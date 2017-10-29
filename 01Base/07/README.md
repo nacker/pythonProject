@@ -185,7 +185,7 @@ xiaoming = People("dongGe")
 print(xiaoming.__name)
 ```
 
-![image description](Image/7.2.1)
+![image description](Image/7.2.1.png)
 
 ```
 class People(object):
@@ -211,15 +211,63 @@ xiaoming.setName("lisi")
 print(xiaoming.getName())
 ```
 
-![image description](Image/7.2.2)
+![image description](Image/7.2.2.png)
 
 **总结**
 
 - Python中没有像C++中public和private这些关键字来区别公有属性和私有属性
 - 它是以属性命名方式来区分，如果在属性名前面加了2个下划线'__'，则表明该属性是私有属性，否则为公有属性（方法也是一样，方法名前面加了2个下划线的话表示该方法是私有的，否则为公有的）。
 
-
 ## 7.3.__del__方法
+创建对象后，python解释器默认调用__init__()方法；
+
+当删除一个对象时，python解释器也会默认调用一个方法，这个方法为__del__()方法
+
+```
+import time
+class Animal(object):
+
+    # 初始化方法
+    # 创建完对象后会自动被调用
+    def __init__(self, name):
+        print('__init__方法被调用')
+        self.__name = name
+
+
+    # 析构方法
+    # 当对象被删除时，会自动被调用
+    def __del__(self):
+        print("__del__方法被调用")
+        print("%s对象马上被干掉了..."%self.__name)
+
+# 创建对象
+dog = Animal("哈皮狗")
+
+# 删除对象
+del dog
+
+
+cat = Animal("波斯猫")
+cat2 = cat
+cat3 = cat
+
+print("---马上 删除cat对象")
+del cat
+print("---马上 删除cat2对象")
+del cat2
+print("---马上 删除cat3对象")
+del cat3
+
+print("程序2秒钟后结束")
+time.sleep(2)
+```
+![image description](Image/7.3.1.png)
+
+**总结**
+
+- 当有1个变量保存了对象的引用时，此对象的引用计数就会加1
+- 当使用del删除变量指向的对象时，如果对象的引用计数不会1，比如3，那么此时只会让这个引用计数减1，即变为2，当再次调用del时，变为1，如果再调用1次del，此时会真的把对象进行删除
+
 ## 7.4.单继承
 ## 7.5.多继承
 ## 7.6.重写父类方法与调用父类方法
