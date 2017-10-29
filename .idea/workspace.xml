@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="870a9ee0-f39b-420c-8dc4-d817bb5ce361" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01Base/07/README.md" afterPath="$PROJECT_DIR$/01Base/07/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/01Base/08/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01Base/README.md" afterPath="$PROJECT_DIR$/01Base/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,8 +55,8 @@
         <entry file="file://$PROJECT_DIR$/01Base/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="422">
-                <caret line="110" column="10" lean-forward="false" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="10" />
+              <first_editor relative-caret-position="174">
+                <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="119" selection-end-column="19" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -81,16 +82,11 @@
         </entry>
       </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/01Base/07/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="165">
-                <caret line="525" column="0" lean-forward="true" selection-start-line="525" selection-start-column="0" selection-end-line="525" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
+        <entry file="file://$PROJECT_DIR$/01Base/08/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,10 +140,12 @@
         <option value="$PROJECT_DIR$/01Base/03/README.md" />
         <option value="$PROJECT_DIR$/01Base/04/README.md" />
         <option value="$PROJECT_DIR$/01Base/05/README.md" />
-        <option value="$PROJECT_DIR$/01Base/06/README.md" />
-        <option value="$PROJECT_DIR$/01Base/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/01Base/07/README.md" />
+        <option value="$PROJECT_DIR$/01Base/08/README.md.py" />
+        <option value="$PROJECT_DIR$/01Base/README.md" />
+        <option value="$PROJECT_DIR$/01Base/06/README.md" />
+        <option value="$PROJECT_DIR$/01Base/08/README.md" />
       </list>
     </option>
   </component>
@@ -204,6 +202,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="01Base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pythonProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pythonProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01Base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="08" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -594,7 +610,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="210" y="23" width="1440" height="838" extended-state="1" />
+    <frame x="210" y="23" width="1440" height="838" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23390558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -634,13 +650,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tornado/03.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tornado/01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -823,32 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01Base/06/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="36">
-            <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01Base/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="422">
-            <caret line="110" column="10" lean-forward="false" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="10" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -865,13 +848,47 @@
     <entry file="file://$PROJECT_DIR$/01Base/07/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="525" column="0" lean-forward="true" selection-start-line="525" selection-start-column="0" selection-end-line="525" selection-end-column="0" />
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="9" />
             <folding />
           </first_editor>
           <second_editor>
             <js_state />
           </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01Base/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="174">
+            <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="119" selection-end-column="19" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01Base/06/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="36">
+            <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01Base/08/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
