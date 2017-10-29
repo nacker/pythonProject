@@ -90,7 +90,7 @@
 	 - 6.11.应用:存放家具
 
 	 
-- [7.面向对象2](https://github.com/nacker/phpProject/tree/master/01_Base/02)
+- [7.面向对象2](https://github.com/nacker/pythonProject/tree/master/01Base/07)
 	 - 7.1.应用
 	 - 7.2.保护对象的属性
 	 - 7.3.__del__方法
