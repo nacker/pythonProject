@@ -195,6 +195,33 @@ print('车轮胎数量为:%d'%BMW.wheelNum)
 
 即看到的是创建出来的BMW对象在内存中的地址
 
+2.定义__str__()方法
+
+```
+class Car:
+
+    def __init__(self, newWheelNum, newColor):
+        self.wheelNum = newWheelNum
+        self.color = newColor
+
+    def __str__(self):
+        msg = "嘿。。。我的颜色是" + self.color + "我有" + int(self.wheelNum) + "个轮胎..."
+        return msg
+
+    def move(self):
+        print('车在跑，目标:夏威夷')
+
+
+BMW = Car(4, "白色")
+print(BMW)
+```
+![定义__str__()方法](image/6.7.2.png)
+
+**总结**
+
+- 在python中方法名如果是__xxxx__()的，那么就有特殊的功能，因此叫做“魔法”方法
+- 当使用print输出对象的时候，只要自己定义了__str__(self)方法，那么就会打印从在这个方法中return的数据
+
 ## 6.8.self
 ## 6.9.应用:烤地瓜
 ## 6.10.隐藏数据
