@@ -223,6 +223,130 @@ print(BMW)
 - 当使用print输出对象的时候，只要自己定义了__str__(self)方法，那么就会打印从在这个方法中return的数据
 
 ## 6.8.self
+
+理解self
+
+看如下示例:
+
+```
+# 定义一个类
+class Animal:
+
+    # 方法
+    def __init__(self, name):
+        self.name = name
+
+    def printName(self):
+        print('名字为:%s'%self.name)
+
+# 定义一个函数
+def myPrint(animal):
+    animal.printName()
+
+
+dog1 = Animal('西西')
+myPrint(dog1)
+
+dog2 = Animal('北北')
+myPrint(dog2)
+```
+运行结果:
+
+![理解self](image/6.8.1.png)
+
+**总结**
+
+- 所谓的self，可以理解为自己
+- 可以把self当做C++中类里面的this指针一样理解，就是对象自身的意思
+- 某个对象调用其方法时，python解释器会把这个对象作为第一个参数传递给self，所以开发者只需要传递后面的参数即可
+
 ## 6.9.应用:烤地瓜
+1.分析“烤地瓜”的属性和方法
+
+示例属性如下:
+
+- cookedLevel : 这是数字；0~3表示还是生的，超过3表示半生不熟，超过5表示已经烤好了，超过8表示已经烤成木炭了！我们的地瓜开始时时生的
+- cookedString : 这是字符串；描述地瓜的生熟程度
+- condiments : 这是地瓜的配料列表，比如番茄酱、芥末酱等
+
+示例方法如下:
+
+- cook() : 把地瓜烤一段时间
+- addCondiments() : 给地瓜添加配料
+- __init__() : 设置默认的属性
+- __str__() : 让print的结果看起来更好一些
+
+2.定义类，并且定义__init__()方法
+
+```
+#定义`地瓜`类
+class SweetPotato:
+    '这是烤地瓜的类'
+
+    #定义初始化方法
+    def __init__(self):
+        self.cookedLevel = 0
+        self.cookedString = "生的"
+        self.condiments = []
+```
+
+3.添加"烤地瓜"方法
+
+```
+    #烤地瓜方法
+    def cook(self, time):
+        self.cookedLevel += time
+        if self.cookedLevel > 8:
+            self.cookedString = "烤成灰了"
+        elif self.cookedLevel > 5:
+            self.cookedString = "烤好了"    
+        elif self.cookedLevel > 3:
+            self.cookedString = "半生不熟"
+        else:
+            self.cookedString = "生的"
+```
+
+4.基本的功能已经有了一部分，赶紧测试一下
+
+把上面2块代码合并为一个程序后，在代码的下面添加以下代码进行测试
+
+```
+mySweetPotato = SweetPotato()
+print(mySweetPotato.cookedLevel)
+print(mySweetPotato.cookedString)
+print(mySweetPotato.condiments)
+```
+完整的代码为:
+
+```
+class SweetPotato:
+    '这是烤地瓜的类'
+
+    #定义初始化方法
+    def __init__(self):
+        self.cookedLevel = 0
+        self.cookedString = "生的"
+        self.condiments = []
+
+        #烤地瓜方法
+    def cook(self, time):
+        self.cookedLevel += time
+        if self.cookedLevel > 8:
+            self.cookedString = "烤成灰了"
+        elif self.cookedLevel > 5:
+            self.cookedString = "烤好了"    
+        elif self.cookedLevel > 3:
+            self.cookedString = "半生不熟"
+        else:
+            self.cookedString = "生的"
+
+# 用来进行测试
+mySweetPotato = SweetPotato()
+print(mySweetPotato.cookedLevel)
+print(mySweetPotato.cookedString)
+print(mySweetPotato.condiments)
+```
+![地瓜](image/6.9.1.png)
+
 ## 6.10.隐藏数据
 ## 6.11.应用:存放家具
