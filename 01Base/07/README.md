@@ -269,7 +269,344 @@ time.sleep(2)
 - 当使用del删除变量指向的对象时，如果对象的引用计数不会1，比如3，那么此时只会让这个引用计数减1，即变为2，当再次调用del时，变为1，如果再调用1次del，此时会真的把对象进行删除
 
 ## 7.4.单继承
+1.继承示例
+
+```
+# 定义一个父类，如下:
+class Cat(object):
+
+    def __init__(self, name, color="白色"):
+        self.name = name
+        self.color = color
+
+    def run(self):
+        print("%s--在跑"%self.name)
+
+
+# 定义一个子类，继承Cat类如下:
+class Bosi(Cat):
+
+    def setNewName(self, newName):
+        self.name = newName
+
+    def eat(self):
+        print("%s--在吃"%self.name)
+
+
+bs = Bosi("印度猫")
+print('bs的名字为:%s'%bs.name)
+print('bs的颜色为:%s'%bs.color)
+bs.eat()
+bs.setNewName('波斯')
+bs.run()
+```
+运行结果:
+
+![image description](Image/7.4.1.png)
+
+**说明：**
+- 虽然子类没有定义__init__方法，但是父类有，所以在子类继承父类的时候这个方法就被继承了，所以只要创建Bosi的对象，就默认执行了那个继承过来的__init__方法
+
+**总结**
+
+- 子类在继承的时候，在定义类时，小括号()中为父类的名字
+- 父类的属性、方法，会被继承给子类
+
+2.注意点
+
+```
+class Animal(object):
+
+    def __init__(self, name='动物', color='白色'):
+        self.__name = name
+        self.color = color
+
+    def __test(self):
+        print(self.__name)
+        print(self.color)
+
+    def test(self):
+        print(self.__name)
+        print(self.color)
+
+
+
+class Dog(Animal):
+    def dogTest1(self):
+        #print(self.__name) #不能访问到父类的私有属性
+        print(self.color)
+
+
+    def dogTest2(self):
+        #self.__test() #不能访问父类中的私有方法
+        self.test()
+
+
+A = Animal()
+#print(A.__name) #程序出现异常，不能访问私有属性
+print(A.color)
+#A.__test() #程序出现异常，不能访问私有方法
+A.test()
+
+print("------分割线-----")
+
+D = Dog(name = "小花狗", color = "黄色")
+D.dogTest1()
+D.dogTest2()
+```
+
+- 私有的属性，不能通过对象直接访问，但是可以通过方法访问
+- 私有的方法，不能通过对象直接访问
+- 私有的属性、方法，不会被子类继承，也不能被访问
+- 一般情况下，私有的属性、方法都是不对外公布的，往往用来做内部的事情，起到安全的作用
+
 ## 7.5.多继承
+Python中多继承的格式如下:
+
+```
+# 定义一个父类
+class A:
+    def printA(self):
+        print('----A----')
+
+# 定义一个父类
+class B:
+    def printB(self):
+        print('----B----')
+
+# 定义一个子类，继承自A、B
+class C(A,B):
+    def printC(self):
+        print('----C----')
+
+obj_C = C()
+obj_C.printA()
+obj_C.printB()
+
+```
+运行结果:
+
+```
+----A----
+----B----
+```
+说明
+
+- python中是可以多继承的
+- 父类中的方法、属性，子类会继承
+
+注意点
+
+想一想:
+
+> 如果在上面的多继承例子中，如果父类A和父类B中，有一个同名的方法，那么通过子类去调用的时候，调用哪个？
+
+```
+#coding=utf-8
+class base(object):
+    def test(self):
+        print('----base test----')
+class A(base):
+    def test(self):
+        print('----A test----')
+
+# 定义一个父类
+class B(base):
+    def test(self):
+        print('----B test----')
+
+# 定义一个子类，继承自A、B
+class C(A,B):
+    pass
+
+
+obj_C = C()
+obj_C.test()
+
+print(C.__mro__) #可以查看C类的对象搜索方法时的先后顺序
+
+```
+
 ## 7.6.重写父类方法与调用父类方法
+1.重写父类方法
+
+所谓重写，就是子类中，有一个和父类相同名字的方法，在子类中的方法会覆盖掉父类中同名的方法
+
+```
+#coding=utf-8
+class Cat(object):
+    def sayHello(self):
+        print("halou-----1")
+
+
+class Bosi(Cat):
+
+    def sayHello(self):
+        print("halou-----2")
+
+bosi = Bosi()
+
+bosi.sayHello()
+```
+
+![image description](Image/7.6.1.png)
+
+2.调用父类的方法
+ 
+```
+#coding=utf-8
+class Cat(object):
+    def __init__(self,name):
+        self.name = name
+        self.color = 'yellow'
+
+
+class Bosi(Cat):
+
+    def __init__(self,name):
+        # 调用父类的__init__方法1(python2)
+        #Cat.__init__(self,name)
+        # 调用父类的__init__方法2
+        #super(Bosi,self).__init__(name)
+        # 调用父类的__init__方法3
+        super().__init__(name)
+
+    def getName(self):
+        return self.name
+
+bosi = Bosi('xiaohua')
+
+print(bosi.name)
+print(bosi.color)
+```
+![image description](Image/7.6.2.png)
+
 ## 7.7.多态
+多态的概念是应用于Java和C#这一类强类型语言中，而Python崇尚“鸭子类型”。
+
+所谓多态：定义时的类型和运行时的类型不一样，此时就成为多态
+
+- Python伪代码实现Java或C#的多态
+
+```
+class F1(object):
+    def show(self):
+        print 'F1.show'
+
+class S1(F1):
+    def show(self):
+        print 'S1.show'
+
+class S2(F1):
+    def show(self):
+        print 'S2.show'
+
+# 由于在Java或C#中定义函数参数时，必须指定参数的类型
+# 为了让Func函数既可以执行S1对象的show方法，又可以执行S2对象的show方法，所以，定义了一个S1和S2类的父类
+# 而实际传入的参数是：S1对象和S2对象
+
+def Func(F1 obj):
+    """Func函数需要接收一个F1类型或者F1子类的类型"""
+
+    print obj.show()
+
+s1_obj = S1()
+Func(s1_obj) # 在Func函数中传入S1类的对象 s1_obj，执行 S1 的show方法，结果：S1.show
+
+s2_obj = S2()
+Func(s2_obj) # 在Func函数中传入Ss类的对象 ss_obj，执行 Ss 的show方法，结果：S2.show
+```
+
+- Python “鸭子类型”
+
+```
+class F1(object):
+    def show(self):
+        print 'F1.show'
+
+class S1(F1):
+
+    def show(self):
+        print 'S1.show'
+
+class S2(F1):
+
+    def show(self):
+        print 'S2.show'
+
+def Func(obj):
+    print obj.show()
+
+s1_obj = S1()
+Func(s1_obj) 
+
+s2_obj = S2()
+Func(s2_obj)
+```
+## 7.8.类属性、实例属性
+在了解了类基本的东西之后，下面看一下python中这几个概念的区别
+
+先来谈一下类属性和实例属性
+
+在前面的例子中我们接触到的就是实例属性（对象属性），顾名思义，类属性就是类对象所拥有的属性，它被所有类对象的实例对象所共有，在内存中只存在一个副本，这个和C++中类的静态成员变量有点类似。对于公有的类属性，在类外可以通过类对象和实例对象访问
+
+类属性
+
+```
+class People(object):
+    name = 'Tom'  #公有的类属性
+    __age = 12     #私有的类属性
+
+p = People()
+
+print(p.name)           #正确
+print(People.name)      #正确
+print(p.__age)            #错误，不能在类外通过实例对象访问私有的类属性
+print(People.__age)        #错误，不能在类外通过类对象访问私有的类属性
+```
+
+实例属性(对象属性)
+
+```
+class People(object):
+    address = '山东' #类属性
+    def __init__(self):
+        self.name = 'xiaowang' #实例属性
+        self.age = 20 #实例属性
+
+p = People()
+p.age =12 #实例属性
+print(p.address) #正确
+print(p.name)    #正确
+print(p.age)     #正确
+
+print(People.address) #正确
+print(People.name)    #错误
+print(People.age)     #错误
+
+```
+
+通过实例(对象)去修改类属性
+
+```
+class People(object):
+    country = 'china' #类属性
+
+
+print(People.country)
+p = People()
+print(p.country)
+p.country = 'japan' 
+print(p.country)      #实例属性会屏蔽掉同名的类属性
+print(People.country)
+del p.country    #删除实例属性
+print(p.country)
+
+```
+![image description](Image/7.8.1.png)
+
+总结
+
+- 如果需要在类外修改类属性，必须通过类对象去引用然后进行修改。如果通过实例对象去引用，会产生一个同名的实例属性，这种方式修改的是实例属性，不会影响到类属性，并且之后如果通过实例对象去引用该名称的属性，实例属性会强制屏蔽掉类属性，即引用的是实例属性，除非删除了该实例属性。
+
 ## 7.9.静态方法和类方法
