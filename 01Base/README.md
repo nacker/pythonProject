@@ -102,7 +102,7 @@
 	 - 7.9.静态方法和类方法
 
 
-- [8.面向对象3、异常、模块](https://github.com/nacker/phpProject/tree/master/01_Base/02)
+- [8.面向对象3、异常、模块](https://github.com/nacker/pythonProject/tree/master/01Base/08)
 	 - 8.1.练习:设计类
 	 - 8.2.工厂模式
 	 - 8.3.__new__方法

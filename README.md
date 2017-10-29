@@ -93,7 +93,7 @@
 	    - 6.10.隐藏数据
 	    - 6.11.应用:存放家具
 
-	 - [7.面向对象2](https://github.com/nacker/pythonProject/tree/master/01Base/07)
+	- [7.面向对象2](https://github.com/nacker/pythonProject/tree/master/01Base/07)
 	    - 7.1.应用
 	    - 7.2.保护对象的属性
 	    - 7.3.__del__方法
@@ -103,5 +103,22 @@
 	    - 7.7.多态
 	    - 7.8.类属性、实例属性
 	    - 7.9.静态方法和类方法
+
+	- [8.面向对象3、异常、模块](https://github.com/nacker/pythonProject/tree/master/01Base/08)
+	    - 8.1.练习:设计类
+	    - 8.2.工厂模式
+	    - 8.3.__new__方法
+	    - 8.4.单利模式
+	    - 8.5.异常介绍
+	    - 8.6.捕获异常
+	    - 8.7.异常的传递
+	    - 8.8.抛出自定义的异常
+	    - 8.9.异常处理中抛出异常
+	    - 8.10.模块介绍
+	    - 8.11.模块制作
+	    - 8.12.模块中的__all__
+	    - 8.13.python中的包
+	    - 8.14.模块发布
+	    - 9.15.模块安装、使用
 
 - 第二章：[Python提高](https://github.com/nacker/phpProject/tree/master/01_Base)
