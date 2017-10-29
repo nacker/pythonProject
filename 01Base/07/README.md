@@ -155,6 +155,70 @@ print(danjia)
 ```
 
 ## 7.2.保护对象的属性
+
+如果有一个对象，当需要对其进行修改属性时，有2种方法
+
+- 对象名.属性名 = 数据 ---->直接修改
+- 对象名.方法名() ---->间接修改
+
+为了更好的保存属性安全，即不能随意修改，一般的处理方式为
+
+- 将属性定义为私有属性
+- 添加一个可以调用的方法，供调用
+
+```
+class People(object):
+
+    def __init__(self, name):
+        self.__name = name
+
+    def getName(self):
+        return self.__name
+
+    def setName(self, newName):
+        if len(newName) >= 5:
+            self.__name = newName
+        else:
+            print("error:名字长度需要大于或者等于5")
+
+xiaoming = People("dongGe")
+print(xiaoming.__name)
+```
+
+![image description](Image/7.2.1)
+
+```
+class People(object):
+
+    def __init__(self, name):
+        self.__name = name
+
+    def getName(self):
+        return self.__name
+
+    def setName(self, newName):
+        if len(newName) >= 5:
+            self.__name = newName
+        else:
+            print("error:名字长度需要大于或者等于5")
+
+xiaoming = People("dongGe")
+
+xiaoming.setName("wanger")
+print(xiaoming.getName())
+
+xiaoming.setName("lisi")
+print(xiaoming.getName())
+```
+
+![image description](Image/7.2.2)
+
+**总结**
+
+- Python中没有像C++中public和private这些关键字来区别公有属性和私有属性
+- 它是以属性命名方式来区分，如果在属性名前面加了2个下划线'__'，则表明该属性是私有属性，否则为公有属性（方法也是一样，方法名前面加了2个下划线的话表示该方法是私有的，否则为公有的）。
+
+
 ## 7.3.__del__方法
 ## 7.4.单继承
 ## 7.5.多继承
