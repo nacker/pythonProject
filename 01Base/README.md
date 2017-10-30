@@ -120,7 +120,7 @@
 	 - 9.15.模块安装、使用
 
 
-- [9.强化练习](https://github.com/nacker/phpProject/tree/master/01_Base/02)
+- [9.强化练习](https://github.com/nacker/pythonProject/tree/master/01Base/09)
 	 - 9.1.给成粗传参数
 	 - 9.2.列表推导式
 	 - 9.3.set、list、tuple
