@@ -505,9 +505,131 @@ except:
 > 
 > 我们可以观察到KeyboardInterrupt异常被触发，程序退出。但是在程序退出之前，finally从句仍然被执行，把文件关闭。
 
-
 ## 8.7.异常的传递
+1.try嵌套中
+
+```
+import time
+try:
+    f = open('test.txt')
+    try:
+        while True:
+            content = f.readline()
+            if len(content) == 0:
+                break
+            time.sleep(2)
+            print(content)
+    finally:
+        f.close()
+        print('关闭文件')
+except:
+    print("没有这个文件")
+```
+运行结果:
+
+```
+In [26]: import time
+    ...: try:
+    ...:     f = open('test.txt')
+    ...:     try:
+    ...:         while True:
+    ...:             content = f.readline()
+    ...:             if len(content) == 0:
+    ...:                 break
+    ...:             time.sleep(2)
+    ...:             print(content)
+    ...:     finally:
+    ...:         f.close()
+    ...:         print('关闭文件')
+    ...: except:
+    ...:     print("没有这个文件")
+    ...: finally:
+    ...:     print("最后的finally")
+    ...:     
+xxxxxxx--->这是test.txt文件中读取到信息
+^C关闭文件
+没有这个文件
+最后的finally
+```
+
+2.函数嵌套调用中
+
+```
+    def test1():
+        print("----test1-1----")
+        print(num)
+        print("----test1-2----")
+
+
+    def test2():
+        print("----test2-1----")
+        test1()
+        print("----test2-2----")
+
+
+    def test3():
+        try:
+            print("----test3-1----")
+            test1()
+            print("----test3-2----")
+        except Exception as result:
+            print("捕获到了异常，信息是:%s"%result)
+
+        print("----test3-2----")
+
+
+
+    test3()
+    print("------华丽的分割线-----")
+    test2()
+
+```
+运行结果:
+
+![image description](Image/8.7.1.png)
+
+总结：
+
+- 如果try嵌套，那么如果里面的try没有捕获到这个异常，那么外面的try会接收到这个异常，然后进行处理，如果外边的try依然没有捕获到，那么再进行传递。。。
+- 如果一个异常是在一个函数中产生的，例如函数A---->函数B---->函数C,而异常是在函数C中产生的，那么如果函数C中没有对这个异常进行处理，那么这个异常会传递到函数B中，如果函数B有异常处理那么就会按照函数B的处理方式进行执行；如果函数B也没有异常处理，那么这个异常会继续传递，以此类推。。。如果所有的函数都没有处理，那么此时就会进行异常的默认处理，即通常见到的那样
+- 注意观察上图中，当调用test3函数时，在test1函数内部产生了异常，此异常被传递到test3函数中完成了异常处理，而当异常处理完后，并没有返回到函数test1中进行执行，而是在函数test3中继续执行
+
 ## 8.8.抛出自定义的异常
+你可以用raise语句来引发一个异常。异常/错误对象必须有一个名字，且它们应是Error或Exception类的子类
+
+下面是一个引发异常的例子:
+
+```
+class ShortInputException(Exception):
+    '''自定义的异常类'''
+    def __init__(self, length, atleast):
+        #super().__init__()
+        self.length = length
+        self.atleast = atleast
+
+def main():
+    try:
+        s = input('请输入 --> ')
+        if len(s) < 3:
+            # raise引发一个你定义的异常
+            raise ShortInputException(len(s), 3)
+    except ShortInputException as result:#x这个变量被绑定到了错误的实例
+        print('ShortInputException: 输入的长度是 %d,长度至少应是 %d'% (result.length, result.atleast))
+    else:
+        print('没有异常发生.')
+
+main()
+```
+运行结果如下:
+
+![image description](Image/8.8.1.png)
+
+注意
+
+- 以上程序中，关于代码#super().__init__()的说明
+
+>     这一行代码，可以调用也可以不调用，建议调用，因为__init__方法往往是用来对创建完的对象进行初始化工作，如果在子类中重写了父类的__init__方法，即意味着父类中的很多初始化工作没有做，这样就不保证程序的稳定了，所以在以后的开发中，如果重写了父类的__init__方法，最好是先调用父类的这个方法，然后再添加自己的功能
+
 ## 8.9.异常处理中抛出异常
 ## 8.10.模块介绍
 ## 8.11.模块制作
