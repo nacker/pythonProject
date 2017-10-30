@@ -875,6 +875,23 @@ import test
 ![image description](Image/8.11.4.png)
 
 ## 8.12.模块中的__all__
+1.没有__all__
+
+![image description](Image/8.12.1.png)
+
+![image description](Image/8.12.2.png)
+
+![image description](Image/8.12.3.png)
+
+2.模块中有__all__
+
+![image description](Image/8.12.4.png)
+
+![image description](Image/8.12.5.png)
+
+**总结**
+- 如果一个文件中有__all__变量，那么也就意味着这个变量中的元素，不会被from xxx import *时导入
+
 ## 8.13.python中的包
 ## 8.14.模块发布
 ## 9.15.模块安装、使用
