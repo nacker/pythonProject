@@ -348,6 +348,25 @@ print(b.age)
 ![image description](Image/8.4.1.png)
 
 ## 8.5.异常介绍
+看如下示例:
+
+```
+print '-----test--1---'
+open('123.txt','r')
+print '-----test--2---'
+```
+运行结果:
+
+![image description](Image/8.5.1.png)
+
+说明:
+
+> 打开一个不存在的文件123.txt，当找不到123.txt 文件时，就会抛出给我们一个IOError类型的错误，No such file or directory：123.txt （没有123.txt这样的文件或目录）
+
+异常:
+
+> 当Python检测到一个错误时，解释器就无法继续执行了，反而出现了一些错误的提示，这就是所谓的"异常"
+
 ## 8.6.捕获异常
 ## 8.7.异常的传递
 ## 8.8.抛出自定义的异常
