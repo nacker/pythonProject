@@ -126,9 +126,9 @@
 	    - 9.2.列表推导式
 	    - 9.3.set、list、tuple
 
-- 第二章：[Python核心编程](https://github.com/nacker/phpProject/tree/master/01_Base)
+- 第二章：[Python核心编程](https://github.com/nacker/pythonProject/tree/master/02CoreProgramming)
 
-    - [1.网络编程](https://github.com/nacker/pythonProject/tree/master/01Base/01)
+    - [1.网络编程](https://github.com/nacker/pythonProject/tree/master/02CoreProgramming/01/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B)
         - 1.网络该诉、udp
             - 1.1.网络通信概述
 	        - 1.2.tcp/ip简介
