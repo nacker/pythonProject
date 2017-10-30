@@ -1007,7 +1007,95 @@ dial('555-1212')
 ```
 from package.module import *
 ```
-然而，这样的语句会导入哪些文件取决于操作系统的文件系统。所以我们在__init__.py 中加入 __all__ 变量。该变量包含执行这样的语句时应该导入的模块的名字。它由一个模块名字符串列表组成.。
+然而，这样的语句会导入哪些文件取决于操作系统的文件系统。所以我们在__init__.py 中加入 __all__ 变量。该变量包含执行这样的语句时应该导入的模块的名字。它由一个模块名字符串列表组成.
 
 ## 8.14.模块发布
+1.mymodule目录结构体如下：
+
+```
+.
+├── setup.py
+├── suba
+│   ├── aa.py
+│   ├── bb.py
+│   └── __init__.py
+└── subb
+    ├── cc.py
+    ├── dd.py
+    └── __init__.py
+
+```
+
+2.编辑setup.py文件
+
+py_modules需指明所需包含的py文件
+
+```
+from distutils.core import setup
+
+setup(name="dongGe", version="1.0", description="dongGe's module", author="dongGe", py_modules=['suba.aa', 'suba.bb', 'subb.cc', 'subb.dd'])
+```
+
+3.构建模块
+
+python setup.py build
+
+构建后目录结构
+
+```
+.
+├── build
+│   └── lib.linux-i686-2.7
+│       ├── suba
+│       │   ├── aa.py
+│       │   ├── bb.py
+│       │   └── __init__.py
+│       └── subb
+│           ├── cc.py
+│           ├── dd.py
+│           └── __init__.py
+├── setup.py
+├── suba
+│   ├── aa.py
+│   ├── bb.py
+│   └── __init__.py
+└── subb
+    ├── cc.py
+    ├── dd.py
+    └── __init__.py
+
+```
+
+4.生成发布压缩包
+
+python setup.py sdist
+
+打包后,生成最终发布压缩包dongGe-1.0.tar.gz , 目录结构
+
+```
+.
+├── build
+│   └── lib.linux-i686-2.7
+│       ├── suba
+│       │   ├── aa.py
+│       │   ├── bb.py
+│       │   └── __init__.py
+│       └── subb
+│           ├── cc.py
+│           ├── dd.py
+│           └── __init__.py
+├── dist
+│   └── dongGe-1.0.tar.gz
+├── MANIFEST
+├── setup.py
+├── suba
+│   ├── aa.py
+│   ├── bb.py
+│   └── __init__.py
+└── subb
+    ├── cc.py
+    ├── dd.py
+    └── __init__.py
+```
+
 ## 9.15.模块安装、使用
